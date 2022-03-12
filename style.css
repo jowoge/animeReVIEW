@@ -1,0 +1,145 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.noPadding {
+    padding: 0;
+}
+
+.header {
+    background-color: blue;
+    padding: 0;
+    font-family: 'Luckiest Guy';
+    color: white;
+}
+
+.fontLuckiestGuy {
+    font-family: 'Luckiest Guy';
+}
+
+.navbar {
+    background-color: blue;
+    padding: 0;
+}
+
+.nav-item:hover {
+    background-color: lightblue;
+}
+
+.nav-link.active {
+    background-color: midnightblue;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a.active {
+    color: white;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+.pHyperlink {
+    color: blue;
+}
+.pHyperlink:hover {
+    color: red;
+}
+
+/*code taken from https://www.w3schools.com/howto/howto_css_image_overlay.asp*/
+.imageContainer {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    color: white
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.imageContainer:hover .image {
+    opacity: 0.3;
+}
+
+.imageContainer:hover .middle {
+    opacity: 1;
+}
+
+.imageText {
+    background-color: lightblue;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.container-fluid.active {
+    background-color: white;
+}
+
+.footer {
+    background-color: white;
+}
+
+.bodyBg {
+    background-color:blue;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media only screen and (max-width: 576px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (max-width: 992px) {}
